@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import Loader from "./Components/Loader";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
+import About from "./Pages/About";
+import Projects from "./Pages/Projects";
+import Contact from "./Pages/Contact";
 
 const App = () => {
-  const [hideLoader, setHideLoader] = useState(true);
-  const [showContent, setShowContent] = useState(true);
+  const [hideLoader, setHideLoader] = useState(false);
+  const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
     
@@ -26,6 +29,9 @@ const App = () => {
        <BrowserRouter>
        <Routes>
         <Route path="/" element={<Dashboard/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/contact" element={<Contact/>} />
        </Routes>
        </BrowserRouter>
       )}

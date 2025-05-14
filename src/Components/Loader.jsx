@@ -13,19 +13,11 @@ const Loader = ({ hide }) => {
       <div className="relative w-50 h-50">
         {/* Spinner Ring */}
         <div
-  className="absolute inset-0 border-3 bg-transparent border-inset border-transparent rounded-full animate-spin"
+  className="absolute inset-0 border-5 bg-transparent border-double border-transparent rounded-full animate-spin"
   style={{
     borderTopColor: "#ff00ff", 
-    borderRightColor: "#00f6ff", 
     borderBottomColor: "#39ff14", 
-    borderLeftColor: "#ffea00", 
     animationDuration: "3s",
-    boxShadow: `
-      0 0 40px #ff00ff,
-      0 0 20px #00f6ff,
-      0 0 30px #39ff14,
-      0 0 40px #ffea00
-    `,
   }}
 ></div>
 
