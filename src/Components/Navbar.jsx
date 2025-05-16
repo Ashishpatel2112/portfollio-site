@@ -27,7 +27,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className=" text-black shadow-md h-[80px] sticky top-0 bg-[#1e1e1d] md:h-[90px]">
+    <nav className=" text-white  h-[80px] sticky top-0 bg-[#3a3a3a] md:h-[90px] z-1">
       <div className="  h-full w-full flex justify-between">
         <div className="one h-full w-[50%]  flex  ">
           <img src={Logo} className=" w-[30%] md:w-[25%] lg:w-[18%] " alt="" />
@@ -104,10 +104,10 @@ export default function Navbar() {
       {isOpen && (
         <div
           ref={dropdownRef}
-          className="absolute bg-[#c9c9c952] md:hidden w-full h-[150px] flex flex-col items-center justify-evenly
+          className="absolute bg-[#5a5959] md:hidden w-full h-[150px] flex flex-col items-center justify-evenly
                      transition-all duration-300 ease-in-out transform translate-y-0 opacity-100"
         >
-          <Link className="font-bold" onClick={() => setIsOpen(false)} to={"/"}>
+          <Link className="font-bold shadow-2xl" onClick={() => setIsOpen(false)} to={"/"}>
             HOME
           </Link>
           <Link

@@ -7,8 +7,8 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 
 const App = () => {
-  const [hideLoader, setHideLoader] = useState(false);
-  const [showContent, setShowContent] = useState(false);
+  const [hideLoader, setHideLoader] = useState(true);
+  const [showContent, setShowContent] = useState(true);
 
   useEffect(() => {
     
@@ -40,3 +40,17 @@ const App = () => {
 };
 
 export default App;
+
+
+// import React from 'react'
+// import Ball from './Components/Ball'
+
+// const App = () => {
+//   return (
+//     <>
+//     <Ball/>
+//     </>
+//   )
+// }
+
+// export default App
