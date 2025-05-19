@@ -5,6 +5,8 @@ import Dashboard from "./Pages/Dashboard";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
+import 'animate.css';
+
 
 const App = () => {
   const [hideLoader, setHideLoader] = useState(true);
