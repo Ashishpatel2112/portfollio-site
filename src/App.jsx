@@ -9,8 +9,8 @@ import 'animate.css';
 
 
 const App = () => {
-  const [hideLoader, setHideLoader] = useState(true);
-  const [showContent, setShowContent] = useState(true);
+  const [hideLoader, setHideLoader] = useState(false);
+  const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
     
