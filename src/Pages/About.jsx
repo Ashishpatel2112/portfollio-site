@@ -46,7 +46,7 @@ const About = () => {
       <div className="section1 h-[250px] md:h-[450px] w-full mt-3 flex justify-center items-center bg-[#c5c5c5]">
         <img
           src={MY}
-          className="rounded-[100%] h-[95%] w-[55%] md:w-[25%] md:h-[80%]"
+          className="rounded-[100%] h-[95%] w-[55%] md:w-[45%] lg:w-[30%] md:h-[80%]"
           alt="my-pic"
           style={{ boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
         />
